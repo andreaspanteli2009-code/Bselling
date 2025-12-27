@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reviews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="terms.html">Terms</a>
+</nav>
+
+<div class="container">
+  <h1>Leave a Review</h1>
+
+  <input type="text" id="name" placeholder="Your name"><br><br>
+
+  <select id="stars">
+    <option value="1">⭐ 1</option>
+    <option value="2">⭐⭐ 2</option>
+    <option value="3">⭐⭐⭐ 3</option>
+    <option value="4">⭐⭐⭐⭐ 4</option>
+    <option value="5">⭐⭐⭐⭐⭐ 5</option>
+  </select><br><br>
+
+  <textarea id="comment" placeholder="Your comment"></textarea><br><br>
+
+  <button onclick="addReview()">Submit Review</button>
+
+  <h2>Reviews</h2>
+  <div id="reviews"></div>
+</div>
+
+<script src="reviews.js"></script>
+</body>
+</html>
